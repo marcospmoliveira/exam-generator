@@ -42,7 +42,6 @@ public class CustomUserDetailsService implements UserDetailsService{
 
 		@Override
 		public Collection<? extends GrantedAuthority> getAuthorities() {
-			// TODO Auto-generated method stub
 			List<GrantedAuthority> authorityListProfessor = AuthorityUtils.createAuthorityList("ROLE_PROFESSOR");
 			List<GrantedAuthority> authorityListStudent = AuthorityUtils.createAuthorityList("ROLE_STUDENT");
 			return this.getProfessor() != null ? authorityListProfessor : authorityListStudent;

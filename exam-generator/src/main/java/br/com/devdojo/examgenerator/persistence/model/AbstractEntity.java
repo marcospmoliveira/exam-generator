@@ -45,6 +45,5 @@ public class AbstractEntity implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
+		
 }
